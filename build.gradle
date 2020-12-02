@@ -16,6 +16,8 @@ dependencies {
     compile "org.apache.beam:beam-runners-direct-java:$beamVersion"
     compile "org.apache.beam:beam-runners-google-cloud-dataflow-java:$beamVersion"
     compile "org.apache.beam:beam-sdks-java-io-google-cloud-platform:$beamVersion"
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
 }
 
 task execute (type:JavaExec) {
